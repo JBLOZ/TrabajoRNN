@@ -1,0 +1,55 @@
+{
+  "model_version": "v2",
+  "task": "next_beat_aami5_grouped",
+  "class_names": {
+    "0": "Normal (N)",
+    "1": "SVEB",
+    "2": "VEB",
+    "3": "Fusión (F)",
+    "4": "Desconocido (Q)"
+  },
+  "input_shapes": {
+    "sequence_input": [
+      20,
+      22
+    ]
+  },
+  "feature_names": [
+    "rr",
+    "delta_rr",
+    "mean_rr",
+    "std_rr",
+    "rmssd",
+    "pnn50",
+    "range_rr",
+    "cv_rr",
+    "max_amp",
+    "min_amp",
+    "ptp_amp",
+    "mean_amp",
+    "std_amp",
+    "rms_amp",
+    "energy",
+    "abs_area",
+    "max_slope",
+    "min_slope",
+    "diff_energy",
+    "pre_post_energy_ratio",
+    "r_peak_rel_pos",
+    "zero_crossing_rate"
+  ],
+  "split_protocol": "grouped_stratified_record_split",
+  "balance_strategy": "balanced_batch",
+  "loss_name": "categorical_crossentropy",
+  "seed": 42,
+  "data_config": {
+    "data_dir": "c:\\Users\\jordi\\Documents\\UNI\\TrabajoRNN\\data\\raw\\mit-bih-arrhythmia-database-1.0.0",
+    "label_mode": "aami_5",
+    "n_steps": 20,
+    "horizon": 1,
+    "lead": 0,
+    "beat_window_before": 90,
+    "beat_window_after": 162,
+    "exclude_paced_records": false
+  }
+}
