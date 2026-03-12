@@ -1,0 +1,51 @@
+{
+  "v1": {
+    "display_name": "v1_baseline_recurrent",
+    "description": "GRU unidireccional sobre secuencias HRV leak-free.",
+    "task": "next_beat_aami5_grouped",
+    "inputs": [
+      "sequence_hrv"
+    ],
+    "xai_methods": [
+      "saliency",
+      "integrated_gradients",
+      "occlusion"
+    ],
+    "artifacts": {
+      "model_dir": "models/v1"
+    }
+  },
+  "v2": {
+    "display_name": "v2_improved_recurrent",
+    "description": "BiGRU/BiLSTM con atención sobre features fusionadas HRV+morfología.",
+    "task": "next_beat_aami5_grouped",
+    "inputs": [
+      "sequence_fused"
+    ],
+    "xai_methods": [
+      "saliency",
+      "integrated_gradients",
+      "occlusion"
+    ],
+    "artifacts": {
+      "model_dir": "models/v2"
+    }
+  },
+  "v3": {
+    "display_name": "v3_best_recurrent_system",
+    "description": "Sistema dual-branch recurrente HRV+morfología con búsqueda dirigida.",
+    "task": "next_beat_aami5_grouped",
+    "inputs": [
+      "sequence_hrv",
+      "sequence_morph"
+    ],
+    "xai_methods": [
+      "saliency",
+      "integrated_gradients",
+      "occlusion"
+    ],
+    "artifacts": {
+      "model_dir": "models/v3"
+    }
+  }
+}
