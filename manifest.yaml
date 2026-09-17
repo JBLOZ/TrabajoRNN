@@ -1,8 +1,5 @@
-# .aicontext/manifest.yaml
-# AI Context configuration for trabajornn
-
-remote-config: "https://github.com/JBLOZ/TrabajoRNN.git"
 name: TrabajoRNN
+remote-config: "https://github.com/JBLOZ/TrabajoRNN.git"
 version: 1.0.0
 description: AI context for trabajornn
 
@@ -88,3 +85,6 @@ marketplace:
 #     url: "https://mcp.example.com/docs/sse"
 #     headers:
 #       Authorization: "Bearer ${DOCS_TOKEN}"
+repos:
+- name: TrabajoRNN
+  source: https://github.com/JBLOZ/TrabajoRNN
