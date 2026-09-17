@@ -1,0 +1,16 @@
+manifest.lock
+  h_bc3c094b133928 2-3
+manifest.yaml
+  h_bc3c094b133928 2,88-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0ff0acefc3780f3208f1808eddafcdbb32115e98",
+  "prompts": {},
+  "humans": {
+    "h_bc3c094b133928": {
+      "author": "Jordi Blasco Lozano <jordiblo@tempe.es>"
+    }
+  }
+}
