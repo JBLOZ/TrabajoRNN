@@ -1,0 +1,18 @@
+.gitignore
+  h_bc3c094b133928 1-11
+manifest.lock
+  h_bc3c094b133928 1-4
+manifest.yaml
+  h_bc3c094b133928 1-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4f7e197157157c47e535745676179500055d2440",
+  "prompts": {},
+  "humans": {
+    "h_bc3c094b133928": {
+      "author": "Jordi Blasco Lozano <jordiblo@tempe.es>"
+    }
+  }
+}
